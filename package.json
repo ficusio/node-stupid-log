@@ -1,0 +1,28 @@
+{
+  "name": "stupid-log",
+  "version": "1.0.0",
+  "description": "Really simple logging utility. Logs to stderr.",
+  "scripts": {
+    "test": "echo 'Sorry, no tests yet' && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ficusio/node-stupid-log.git"
+  },
+  "keywords": [
+    "log",
+    "logger",
+    "stderr"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ficusio/node-stupid-log/issues"
+  },
+  "homepage": "https://github.com/ficusio/node-stupid-log",
+  "dependencies": {},
+  "devDependencies": {},
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ]
+}
