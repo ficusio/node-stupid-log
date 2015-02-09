@@ -17,18 +17,17 @@ function makeLogFunc(name, type) {
     return function() {
       console.error.apply(console, arguments);
     };
-  } else {
-    var header = (name == undefined)
-      ? '{' + type + '}'
-      : (type == undefined)
-        ? '[' + name + ']'
-        : '[' + name + '] {' + type + '}';
-    return function() {
-      var args = arguments.length == 1 ? [arguments[0]] : Array.apply(null, arguments);
-      args.unshift(header);
-      console.error.apply(console, args);
-    };
   }
+  var header = (name == undefined)
+    ? '{' + type + '}'
+    : (type == undefined)
+      ? '[' + name + ']'
+      : '[' + name + '] {' + type + '}';
+  return function() {
+    var args = arguments.length == 1 ? [arguments[0]] : Array.apply(null, arguments);
+    args.unshift(header);
+    console.error.apply(console, args);
+  };
 }
 
 
